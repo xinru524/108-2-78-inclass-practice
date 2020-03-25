@@ -65,7 +65,17 @@ as.double(tpeDateTime)
 pgDateTime<-mdy_hms("Mar.18, 2020, 05:52:40",tz="Europe/Lisbon")
 pgDateTime
 ```
-`
+` 
+```{r}
+studentTime<-c(
+  ymd_hms("2020-03-04T08:15:28Z"),
+  ymd_hms("2020-03-11 16:11:43",tz="Asia/Taipei"),
+  ymd_hms("2020-03-11 16:11:43",tz="Asia/Taipei")
+)
+studentTime
+```
+
+
 ```{r}
 with_tz(tpeDateTime, tzone="UTC")
 with_tz(pgDateTime, tzone="UTC")
@@ -73,9 +83,7 @@ with_tz(pgDateTime, tzone="UTC")
 ```
 2020-03-04T08:15:28Z	2020-03-11 16:11:43	2020-03-11 16:11:43
 ```
-```{r}
-studentTime<-ymd_hms(
-"2020-03-04T08:15:28Z")
+
 ```
 ```
 
